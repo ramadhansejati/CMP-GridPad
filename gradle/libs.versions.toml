@@ -1,0 +1,16 @@
+[versions]
+
+kotlin = "1.9.21"
+agp = "8.2.1"
+compose = "1.5.11"
+kotlinx-collections-immutable = "0.3.5"
+
+[libraries]
+kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinx-collections-immutable" }
+
+
+[plugins]
+
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
